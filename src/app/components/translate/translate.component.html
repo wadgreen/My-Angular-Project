@@ -1,0 +1,27 @@
+   <div class="field">
+      <label class="label">Premier Langue</label>
+      <div class="control">
+          <input class="input is-medium" #newWord>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Deuxième Langue</label>
+      <div class="control">
+          <input class="input is-medium" #newWord2>
+      </div>
+    </div>
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-primary" (click)="addWord(newWord.value) + addWord2(newWord2.value)">Ajouter</button>
+        <table class="table is-bordered">
+            <tr class="is-selected">
+            <th>Premier Langue</th>
+            <th>Deuxième Langue</th>
+            </tr>
+            <tr>
+            <td *ngFor="let l of Langue1"> {{Langue1}}</td>
+            <td *ngFor="let l of Langue2"> {{Langue2}} </td>
+          </tr>
+        </table>
+      </div>
+    </div>

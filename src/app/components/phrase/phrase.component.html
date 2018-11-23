@@ -1,0 +1,20 @@
+<h2 class="subtitle is-2">{{title}}</h2>
+
+<table class="table is-fullwidth table is-bordered">
+  <thead>
+    <tr  class="is-selected">
+      <th>ID</th>
+      <th>French</th>
+      <th>English</th>
+      <th>Arabic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let p of phrases'>
+      <th>{{p.id}}</th>
+      <th>{{p.phrasef}}</th>
+      <th>{{p.phrasee}}</th>
+      <td>{{p.phrasea}}</td>
+    </tr>
+  </tbody>
+</table>
