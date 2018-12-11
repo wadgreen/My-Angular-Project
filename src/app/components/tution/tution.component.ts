@@ -1,24 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { TutionService } from '../../tution.service';
-import { observable } from 'rxjs';
 
 @Component({
   selector: 'app-tution',
   templateUrl: './tution.component.html',
   styleUrls: ['./tution.component.scss']
 })
-export class TutionComponent implements OnInit {
+export class TutionComponent {
+      title = "List of Courses";
+      courses;
 
-  title: string;
-  tution$: object;
+  constructor() {
+    let service = new TutionService();
 
-  constructor(private course: TutionService) { }
-
-  ngOnInit() {
-    this.title = "Course";
-    this.course.getTution().subscribe(
-      course => this.tution$ = course
-    );
+   }
   }
-
-}

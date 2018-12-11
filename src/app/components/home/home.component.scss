@@ -1,0 +1,48 @@
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  cursor: default;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  margin: auto;
+  display: block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Orbitron', cursive;
+  font-size: 40px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 transparent,
+  0 7px 0 transparent,
+  0 8px 0 transparent,
+  0 9px 0 transparent,
+  0 10px 10px rgba(0, 0, 0, 0.801);
+ }@keyframes bounce {
+  100% {
+  top: -30px;
+
+  text-shadow: 0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 #CCC,
+  0 7px 0 #CCC,
+  0 8px 0 #CCC,
+  0 9px 0 #CCC,
+  0 30px 30px rgba(0, 0, 0, .3);
+  }
+ }

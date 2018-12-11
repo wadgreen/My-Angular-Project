@@ -13,3 +13,13 @@ hoverTable thead tr{
   hoverTable thead tr:hover {
         background-color: #ffff99;
   }
+
+  tr.even{
+    background: #b8d1f3;
+    color: aliceblue;
+  }
+
+  tr.odd{
+    background: #4e95f4;
+    color: cornsilk;
+  }

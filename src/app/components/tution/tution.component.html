@@ -1,16 +1,84 @@
-<div class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">{{title}}</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <!-- Content ... -->
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
-      </footer>
+<div class="container is-widescreen">
+  <h1 class="title">{{ title }}</h1>
+
+  <div class="tile is-parent">
+    <div class="card-image">
+      <img src="\assets\img\Alphabetf.jpg" alt="Placeholder image">
     </div>
+    <article class="tile is-child notification is-primary">
+      <p class="title">Alphabet français</p>
+      <p class="subtitle">Connaître les lettres de l’alphabet.</p>
+      <div class="content">
+        <h4>L’alphabet est l’ensemble des lettres utilisées pour écrire des mots.</h4>
+        <h5> Dans l'alphabet, il y a : </h5>
+        <h4>26 lettres <br> 6 Voyelles, <br> 20 Consonnes</h4>
+        <a class="button rounded" href="https://fr.wikipedia.org/wiki/Aide:Alphabet_phon%C3%A9tique_fran%C3%A7ais"
+          target="_blank">More</a>
+      </div>
+    </article>
   </div>
+
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-info">
+      <p class="title">Les pronoms</p>
+      <p class="subtitle">Les pronoms remplacent des noms, des groupes nominaux, et parfois des propositions.</p>
+      <div class="content">
+        <table class="table is-bordered is-stripe">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Pronoms </th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Pronoms personnels</td>
+              <td><strong>Sujets:</strong> je, tu, il, elle, nous, vous, ils, elles <br>
+                <strong>COD :</strong> me, te, le, les, nous, vous, leur <br>
+                <strong>COI :</strong> me, te, lui, en, y, nous, vous, leur <br>
+                <strong>CC :</strong> de lieu : en, y <br>
+                <strong>Accentués :</strong> moi, toi, lui, elle, nous, vous, eux, elles
+              </td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Pronoms démonstratifs</td>
+              <td>ce, c', ça, cela, ceci, celui, celle, celui-ci, <br>
+                celle-là, ceux, celles, ceux-ci, ceux-là, <br>
+                celles-ci, celles-là,...
+              </td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <th>Pronoms possessifs</th>
+              <td> le mien, la mienne, le tien, la tienne, le
+                <br>
+                sien, la sienne, le (la) nôtre, le (la)
+                <br>
+                vôtre, le (la) leur, les mien(ne)s, les
+                <br>
+                tien(ne)s, les sien(ne)s, les nôtres, les
+                <br>
+                vôtres, les leurs
+              </td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>Pronoms interrogatifs</td>
+              <td> qui ? que ? à qui ? ...</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>Pronoms relatifs</td>
+              <td>qui, que, quoi, dont, où, + lequel et ses composés</td>
+            </tr>
+          </tbody>
+        </table>
+        <a class="button rounded" href="https://fr.wikipedia.org/wiki/Aide:Alphabet_phon%C3%A9tique_fran%C3%A7ais"
+          target="_blank">More</a>
+      </div>
+    </article>
+  </div>
+</div>

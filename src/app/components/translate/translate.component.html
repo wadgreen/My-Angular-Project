@@ -14,14 +14,24 @@
       <div class="control">
         <button class="button is-primary" (click)="addWord(newWord.value) + addWord2(newWord2.value)">Ajouter</button>
         <table class="table is-bordered">
+          <thead>
             <tr class="is-selected">
             <th>Premier Langue</th>
             <th>Deuxième Langue</th>
             </tr>
+          </thead>
+          <tfoot>
+              <tr class="is-selected">
+              <th>Premier Langue</th>
+              <th>Deuxième Langue</th>
+              </tr>
+            </tfoot>
+            <tbody>
             <tr>
-            <td *ngFor="let l of Langue1"> {{Langue1}}</td>
-            <td *ngFor="let l of Langue2"> {{Langue2}} </td>
+            <td> <div *ngFor="let l of Langue1">{{Langue1}}</div> </td>
+            <td> <div *ngFor="let l of Langue2">{{Langue2}} </div> </td>
           </tr>
+        </tbody>
         </table>
       </div>
     </div>

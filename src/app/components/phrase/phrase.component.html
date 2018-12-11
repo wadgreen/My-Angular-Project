@@ -10,8 +10,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor='let p of phrases'>
-      <th>{{p.id}}</th>
+    <tr *ngFor="let p of phrases; let myIndex = index; let evenP = even; let oddP = odd;"
+     [ngClass]="{odd: oddP, even: evenP, first: firstP, last: lastP}">
+      <th>{{myIndex + 1}}</th>
       <th>{{p.phrasef}}</th>
       <th>{{p.phrasee}}</th>
       <td>{{p.phrasea}}</td>

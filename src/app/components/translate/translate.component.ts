@@ -15,12 +15,12 @@ export class TranslateComponent implements OnInit {
   }
 
 
-  addWord(newWord: string) {
+  addWord(newWord) {
     if (newWord) {
       this.Langue1.push(newWord);
     }
   }
-  addWord2(newWord2:string){
+  addWord2(newWord2){
     if(newWord2){
       this.Langue2.push(newWord2)
     }

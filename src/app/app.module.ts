@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; 
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { PhrasesService } from './phrases.service';
 import {  TranslationService } from './translation.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +29,33 @@ import { HomeComponent } from './components/home/home.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    RouterModule.forRoot([
+      {path: "" ,
+       redirectTo:'home' ,
+       pathMatch:'full'
+      },
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'phrase',
+        component: PhraseComponent
+      },
+      {
+        path: 'tution',
+        component: TutionComponent
+      },
+      {
+        path: 'translate',
+        component: TranslateComponent
+      },
+      {
+        path: 'setting',
+        component: SettingComponent
+      }
+
+    ])
   ],
   providers: [PhrasesService,  TranslationService ],
   bootstrap: [AppComponent]
